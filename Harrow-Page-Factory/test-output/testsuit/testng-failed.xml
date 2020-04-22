@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testsuit]">
+  <listeners>
+    <listener class-name="uk.gov.harrow.listeners.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="BenefitsTest(failed)">
+    <classes>
+      <class name="uk.gov.harrow.testsuit.BenefitsTest1">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- uk.gov.harrow.testsuit.BenefitsTest1 -->
+      <class name="uk.gov.harrow.testsuit.BenefitsTest">
+        <methods>
+          <include name="verifyUserIsAbleToNavigateToBenefitsPage"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- uk.gov.harrow.testsuit.BenefitsTest -->
+    </classes>
+  </test> <!-- BenefitsTest(failed) -->
+  <test name="BenefitsTest1(failed)">
+    <classes>
+      <class name="uk.gov.harrow.testsuit.BenefitsTest1">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="setUp"/>
+          <include name="verifyUserIsAbleToNavigateToBenefitsPage"/>
+        </methods>
+      </class> <!-- uk.gov.harrow.testsuit.BenefitsTest1 -->
+      <class name="uk.gov.harrow.testsuit.BenefitsTest">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- uk.gov.harrow.testsuit.BenefitsTest -->
+    </classes>
+  </test> <!-- BenefitsTest1(failed) -->
+</suite> <!-- Failed suite [testsuit] -->

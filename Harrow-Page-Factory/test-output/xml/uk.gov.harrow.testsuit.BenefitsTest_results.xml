@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BenefitsTest"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="2"
+           time="0.002">
+  <properties />
+            <testcase name="openBrowser" time="0.000" classname="uk.gov.harrow.testsuit.BenefitsTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="Timed out waiting for driver server to start.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-97F9FNJ&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: ChromeDriver"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-97F9FNJ', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: ChromeDriver
+  org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+  org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+  uk.gov.harrow.browserselector.BrowserSelector.selectorBrowser(BrowserSelector.java:15)
+  uk.gov.harrow.testbase.TestBase.openBrowser(TestBase.java:22)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+  org.testng.SuiteRunner.run(SuiteRunner.java:254)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:12843/status] to be available after 20058 ms
+  org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+  org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+  org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+  uk.gov.harrow.browserselector.BrowserSelector.selectorBrowser(BrowserSelector.java:15)
+  uk.gov.harrow.testbase.TestBase.openBrowser(TestBase.java:22)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+  org.testng.SuiteRunner.run(SuiteRunner.java:254)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+Caused by: java.util.concurrent.TimeoutException
+  java.util.concurrent.FutureTask.get(FutureTask.java:205)
+  com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+  org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+  org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+  org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+  uk.gov.harrow.browserselector.BrowserSelector.selectorBrowser(BrowserSelector.java:15)
+  uk.gov.harrow.testbase.TestBase.openBrowser(TestBase.java:22)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+  org.testng.SuiteRunner.run(SuiteRunner.java:254)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="setUp" time="0.0" classname="uk.gov.harrow.testsuit.BenefitsTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyUserIsAbleToNavigateToBenefitsPage" time="0.0" classname="uk.gov.harrow.testsuit.BenefitsTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>
